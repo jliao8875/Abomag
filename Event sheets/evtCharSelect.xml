@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evtCharSelect</name>
+    <events>
+        <variable comment="Identifier for Plankp" constant="1" name="SPRITE_PLANKP" sid="584643060862792" static="0" type="text">Plankp</variable>
+        <variable comment="Identifier for JLiao" constant="1" name="SPRITE_JLIAO" sid="750866887499983" static="0" type="text">JLiao</variable>
+        <variable comment="Character selected by player1" constant="0" name="Player1Char" sid="728100322803522" static="0" type="text"></variable>
+        <variable comment="Character selected by player2" constant="0" name="Player2Char" sid="132613680677718" static="0" type="text"></variable>
+        <event-block sid="799362824879041">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="994075518072337" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="421633090358616" type="Guide">
+                    <param id="0" name="Text">&quot;Choose your character Player 1&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="950282106135087" type="selectionState">
+                    <param id="0" name="Text">&quot;No one has chosen their characters yet&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="917135661648675">
+            <conditions>
+                <condition id="17" name="On tap object" sid="195414200698865" type="Touch">
+                    <param id="0" name="Object">sprPlankpHead</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="588873584156699">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="665912492369163" type="System">
+                            <param id="0" name="Variable">Player1Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="350866095191266" type="System">
+                            <param id="0" name="Variable">Player1Char</param>
+                            <param id="1" name="Value">SPRITE_PLANKP</param>
+                        </action>
+                        <action id="0" name="Set text" sid="989114220848211" type="Guide">
+                            <param id="0" name="Text">&quot;Choose your character Player 2&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="341008728137498" type="selectionState">
+                            <param id="0" name="Text">&quot;Player 1 has chosen &quot; &amp; Player1Char &amp; newline</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="365148125712752">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="721821377334248" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="798930860051769" type="System">
+                            <param id="0" name="Variable">Player2Char</param>
+                            <param id="1" name="Value">SPRITE_PLANKP</param>
+                        </action>
+                        <action id="1" name="Append text" sid="296946452270320" type="selectionState">
+                            <param id="0" name="Text">&quot;Player 2 has chosen &quot; &amp; Player2Char</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="855420936166931" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="847126493688456" type="System">
+                            <param id="0" name="Layout">Map</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="503634189708344">
+            <conditions>
+                <condition id="17" name="On tap object" sid="337485345854494" type="Touch">
+                    <param id="0" name="Object">sprJliaoHead</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="997015994839940">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="852128119656985" type="System">
+                            <param id="0" name="Variable">Player1Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="748790194184365" type="System">
+                            <param id="0" name="Variable">Player1Char</param>
+                            <param id="1" name="Value">SPRITE_JLIAO</param>
+                        </action>
+                        <action id="0" name="Set text" sid="548680917839491" type="Guide">
+                            <param id="0" name="Text">&quot;Choose your character Player 2&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="884107281187602" type="selectionState">
+                            <param id="0" name="Text">&quot;Player 1 has chosen &quot; &amp; Player1Char &amp; newline</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="555241694484727">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="849193555473706" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="461298937210796" type="System">
+                            <param id="0" name="Variable">Player2Char</param>
+                            <param id="1" name="Value">SPRITE_JLIAO</param>
+                        </action>
+                        <action id="1" name="Append text" sid="380491990897529" type="selectionState">
+                            <param id="0" name="Text">&quot;Player 2 has chosen &quot; &amp; Player2Char</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="139038434936677" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="923703604707837" type="System">
+                            <param id="0" name="Layout">Map</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

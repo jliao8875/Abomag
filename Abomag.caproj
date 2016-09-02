@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Abomag</name>
+    <description>A fighting game</description>
+    <version>0.1.0</version>
+    <author>Plankp, Jeffliao</author>
+    <author-email></author-email>
+    <author-website>http://atoiks-games.github.io</author-website>
+    <app-id>com.atoiks.games</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>23300</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>StartScreen</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="welcomeText" sid="223508256571652">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Keyboard" sid="311147151430431">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Touch" sid="753638564490438">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="sprPlankpHead" sid="366800367565727">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="117230460463398" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Guide" sid="937835337845751">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="selectionState" sid="739845270514425">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="sprPlankp" sid="547164988146412">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="301177734146144">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="261808181198702">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="185086485340891" speed="5">
+                    <frame duration="1" hotspotX="0.501393" hotspotY="0.501511" original-source="C:\Users\yteng\OneDrive\lol\plankp-full.gif">
+                        <collision-poly>
+                            <point x="0.62117" y="0.326284" />
+                            <point x="0.62117" y="0.0664652" />
+                            <point x="0.818942" y="0.0302115" />
+                            <point x="0.987465" y="0.231873" />
+                            <point x="0.830083" y="0.705438" />
+                            <point x="0.629526" y="0.987915" />
+                            <point x="0.454039" y="0.981873" />
+                            <point x="0.238162" y="0.808157" />
+                            <point x="0.0111421" y="0.528701" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Ground" sid="251589917020859">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="344954078392224">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="452393551685744" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\yteng\Desktop\Ground.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player1Spawn" sid="407514302392703">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="996571908762480" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player2Spawn" sid="418355184188421">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="101801257473173" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CharDesc" sid="999622232429678">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="sprJliaoHead" sid="121098611115720">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="791510649442336" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\yteng\OneDrive\lol\jeffliao.gif" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sprJliao" sid="916459971220125">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="745539476173110">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="362004681924237" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501089" original-source="C:\Users\yteng\OneDrive\lol\jeffliao-full.gif">
+                        <collision-poly>
+                            <point x="0.20303" y="0.111111" />
+                            <point x="0.471212" y="0.0185185" />
+                            <point x="0.724242" y="0.124183" />
+                            <point x="0.869697" y="0.582789" />
+                            <point x="0.772727" y="0.551198" />
+                            <point x="0.825758" y="0.918301" />
+                            <point x="0.142424" y="0.921569" />
+                            <point x="0.157576" y="0.572985" />
+                            <point x="0.0681818" y="0.610022" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>StartScreen.xml</layout>
+        <layout>CharSelect.xml</layout>
+        <layout>Map.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>evtCharSelect.xml</event-sheet>
+        <event-sheet>evtStartScreen.xml</event-sheet>
+        <event-sheet>evtMap.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="1" />
+        <global-instance type="Touch" uid="2">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

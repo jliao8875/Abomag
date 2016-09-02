@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evtMap</name>
+    <events>
+        <variable constant="0" name="Player1UID" sid="934364624794200" static="0" type="number">0</variable>
+        <variable constant="0" name="Player2UID" sid="355194014742873" static="0" type="number">0</variable>
+        <event-block sid="214585408039588">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="220040352945349" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Player 1 initialization</comment>
+                <event-block sid="527565538747228">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="998160350092611" type="System">
+                            <param id="0" name="Variable">Player1Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_PLANKP</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="175857107200503" type="player1Spawn">
+                            <param id="0" name="Object">sprPlankp</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="288692206306218" type="System">
+                            <param id="0" name="Variable">Player1UID</param>
+                            <param id="1" name="Value">sprPlankp.UID</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="707964494947759" type="sprPlankp">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="746578092578772">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="826999393366709" type="System">
+                            <param id="0" name="Variable">Player1Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_JLIAO</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="306218666853448" type="player1Spawn">
+                            <param id="0" name="Object">sprJliao</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="347872653630013" type="System">
+                            <param id="0" name="Variable">Player1UID</param>
+                            <param id="1" name="Value">sprJliao.UID</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="664047662045813" type="sprJliao">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Player 2 initialization</comment>
+                <event-block sid="467269848823327">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="306933098223905" type="System">
+                            <param id="0" name="Variable">Player2Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_PLANKP</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="844174864000549" type="player2Spawn">
+                            <param id="0" name="Object">sprPlankp</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="810391222151533" type="System">
+                            <param id="0" name="Variable">Player2UID</param>
+                            <param id="1" name="Value">sprPlankp.UID</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="820621071330454" type="sprPlankp">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="593391053348323">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="700118244426318" type="System">
+                            <param id="0" name="Variable">Player2Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_JLIAO</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="976713604255668" type="player2Spawn">
+                            <param id="0" name="Object">sprJliao</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="492705781060081" type="System">
+                            <param id="0" name="Variable">Player2UID</param>
+                            <param id="1" name="Value">sprJliao.UID</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="384652552291213" type="sprJliao">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Behold!!! The super nasty way of doing things!</comment>
+        <comment>Player 1 keyboard</comment>
+        <event-block sid="557288971142127">
+            <conditions>
+                <condition id="2" name="Key is down" sid="435378081218160" type="Keyboard">
+                    <param id="0" name="Key">68 (D)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="736760030410631">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="300280266279895" type="System">
+                            <param id="0" name="Variable">Player1Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_PLANKP</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="402366705481297" type="sprPlankp">
+                            <param id="0" name="Unique ID">Player1UID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="850253343025212" type="sprPlankp">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="672749542159204" type="sprPlankp">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="641548998058200">
+            <conditions>
+                <condition id="2" name="Key is down" sid="905060129404657" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="713704240979821">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="982104399024156" type="System">
+                            <param id="0" name="Variable">Player1Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_PLANKP</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="196114162874131" type="sprPlankp">
+                            <param id="0" name="Unique ID">Player1UID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="106669046137630" type="sprPlankp">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="400682508400068" type="sprPlankp">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="486557210596778">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="120057287472929" type="System">
+                            <param id="0" name="Variable">Player1Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_JLIAO</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="430997976803200" type="sprJliao">
+                            <param id="0" name="Unique ID">Player1UID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="767276660200959" type="sprJliao">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="993935435389492" type="sprJliao">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="353358594376760">
+            <conditions>
+                <condition id="2" name="Key is down" sid="365302353587835" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="640136596228693">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="359627619596467" type="System">
+                            <param id="0" name="Variable">Player1Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_PLANKP</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="905027084101503" type="sprPlankp">
+                            <param id="0" name="Unique ID">Player1UID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="982479398905896" type="sprPlankp">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="485963748719923">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="293387479449430" type="System">
+                            <param id="0" name="Variable">Player1Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_JLIAO</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="844184081830742" type="sprJliao">
+                            <param id="0" name="Unique ID">Player1UID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="945655627741683" type="sprJliao">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Player 2 keyboard</comment>
+        <event-block sid="355439132971581">
+            <conditions>
+                <condition id="2" name="Key is down" sid="652919036954890" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="200058803655798">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="413740720020005" type="System">
+                            <param id="0" name="Variable">Player2Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_PLANKP</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="308013276610130" type="sprPlankp">
+                            <param id="0" name="Unique ID">Player2UID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="641931579316182" type="sprPlankp">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="893775497832858" type="sprPlankp">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="133882087793229">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="350803476993156" type="System">
+                            <param id="0" name="Variable">Player2Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_JLIAO</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="540527727199741" type="sprJliao">
+                            <param id="0" name="Unique ID">Player2UID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="685017747128488" type="sprJliao">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="335079483614740" type="sprJliao">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="885294835477186">
+            <conditions>
+                <condition id="2" name="Key is down" sid="276276909370626" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="729973948025547">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="708982405747107" type="System">
+                            <param id="0" name="Variable">Player2Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_PLANKP</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="374103305603407" type="sprPlankp">
+                            <param id="0" name="Unique ID">Player2UID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="134201883189184" type="sprPlankp">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="865832961237104" type="sprPlankp">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="519699863828735">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="944518769317610" type="System">
+                            <param id="0" name="Variable">Player2Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_JLIAO</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="528270414052945" type="sprJliao">
+                            <param id="0" name="Unique ID">Player2UID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="830227052115613" type="sprJliao">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="196426052325722" type="sprJliao">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="807156500255215">
+            <conditions>
+                <condition id="2" name="Key is down" sid="287324552997801" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="818858259112651">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="770203792834122" type="System">
+                            <param id="0" name="Variable">Player2Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_PLANKP</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="449779445715664" type="sprPlankp">
+                            <param id="0" name="Unique ID">Player2UID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="259548274278503" type="sprPlankp">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="476100116551771">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="493789062281662" type="System">
+                            <param id="0" name="Variable">Player2Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_JLIAO</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="860430250061123" type="sprJliao">
+                            <param id="0" name="Unique ID">Player2UID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="829803890904978" type="sprJliao">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

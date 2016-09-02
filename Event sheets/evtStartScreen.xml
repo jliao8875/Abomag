@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evtStartScreen</name>
+    <events>
+        <event-block any="1" sid="535358254182396">
+            <conditions>
+                <condition id="14" name="On tap" sid="102309690804275" type="Touch" />
+                <condition id="1" name="On any key pressed" sid="822912283652472" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="177192215678322" type="System">
+                    <param id="0" name="Layout">CharSelect</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
