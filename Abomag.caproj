@@ -70,6 +70,9 @@
         </object-type>
         <object-type name="sprPlankp" sid="547164988146412">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Hit points.." name="HitPoint" sid="466567727617668" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="301177734146144">
                     <behavior id="Platform" />
@@ -153,6 +156,9 @@
         </object-type>
         <object-type name="sprJliao" sid="916459971220125">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Hit points.." name="HitPoint" sid="269976566505857" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="745539476173110">
                     <behavior id="Platform" />
@@ -226,6 +232,9 @@
         </object-type>
         <object-type name="sprEgg" sid="696429603226310">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="UID of the *Plankp* who fired the egg" name="FiredByUID" sid="396017643003527" type="number" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="235680728698378" speed="5">
                     <frame duration="1" hotspotX="0.494774" hotspotY="0.488215" original-source="C:\Users\yteng\Desktop\egg.png">
@@ -241,17 +250,22 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="EndGameTxt" sid="426205774147587">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>StartScreen.xml</layout>
         <layout>CharSelect.xml</layout>
         <layout>Map.xml</layout>
+        <layout>GameOver.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>evtCharSelect.xml</event-sheet>
         <event-sheet>evtStartScreen.xml</event-sheet>
         <event-sheet>evtMap.xml</event-sheet>
+        <event-sheet>evtGameOver.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="1" />

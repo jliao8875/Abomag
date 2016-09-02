@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evtGameOver</name>
+    <events>
+        <event-block sid="377538696769105">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="143238913024664" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="141688849599700" type="EndGameTxt">
+                    <param id="0" name="Text">Player1UID &lt; 0 ? (&quot;Player 2 (&quot; &amp; Player2Char &amp; &quot;) won!&quot;) : (&quot;Player 1 (&quot; &amp; Player1Char &amp; &quot;) won!&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
