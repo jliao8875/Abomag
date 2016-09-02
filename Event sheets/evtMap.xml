@@ -109,10 +109,13 @@
         </event-block>
         <comment>Behold!!! The super nasty way of doing things!</comment>
         <comment>Player 1 keyboard</comment>
-        <event-block sid="557288971142127">
+        <event-block any="1" sid="557288971142127">
             <conditions>
                 <condition id="2" name="Key is down" sid="435378081218160" type="Keyboard">
                     <param id="0" name="Key">68 (D)</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="654725979083418" type="Touch">
+                    <param id="0" name="Object">sprP1RightArrow</param>
                 </condition>
             </conditions>
             <actions />
@@ -139,10 +142,13 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="641548998058200">
+        <event-block any="1" sid="641548998058200">
             <conditions>
                 <condition id="2" name="Key is down" sid="905060129404657" type="Keyboard">
                     <param id="0" name="Key">65 (A)</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="115887295567273" type="Touch">
+                    <param id="0" name="Object">sprP1LeftArrow</param>
                 </condition>
             </conditions>
             <actions />
@@ -189,10 +195,13 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="353358594376760">
+        <event-block any="1" sid="353358594376760">
             <conditions>
                 <condition id="2" name="Key is down" sid="365302353587835" type="Keyboard">
                     <param id="0" name="Key">87 (W)</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="191290216952907" type="Touch">
+                    <param id="0" name="Object">sprP1UpArrow</param>
                 </condition>
             </conditions>
             <actions />
@@ -234,10 +243,13 @@
             </sub-events>
         </event-block>
         <comment>Player 2 keyboard</comment>
-        <event-block sid="355439132971581">
+        <event-block any="1" sid="355439132971581">
             <conditions>
                 <condition id="2" name="Key is down" sid="652919036954890" type="Keyboard">
                     <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="707519817415545" type="Touch">
+                    <param id="0" name="Object">sprP2RightArrow</param>
                 </condition>
             </conditions>
             <actions />
@@ -284,10 +296,13 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="885294835477186">
+        <event-block any="1" sid="885294835477186">
             <conditions>
                 <condition id="2" name="Key is down" sid="276276909370626" type="Keyboard">
                     <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="999095133898710" type="Touch">
+                    <param id="0" name="Object">sprP2LeftArrow</param>
                 </condition>
             </conditions>
             <actions />
@@ -334,10 +349,13 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="807156500255215">
+        <event-block any="1" sid="807156500255215">
             <conditions>
                 <condition id="2" name="Key is down" sid="287324552997801" type="Keyboard">
                     <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="481003761124607" type="Touch">
+                    <param id="0" name="Object">sprP2UpArrow</param>
                 </condition>
             </conditions>
             <actions />

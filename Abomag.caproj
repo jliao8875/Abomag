@@ -161,6 +161,54 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="sprP1UpArrow" sid="667027902346205">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="529479247053837" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="C:\Users\yteng\Desktop\Arrow.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sprP1LeftArrow" sid="948660384914426">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="354543408061869" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="C:\Users\yteng\Desktop\Arrow.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sprP1RightArrow" sid="988060102585327">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="491388843109106" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="C:\Users\yteng\Desktop\Arrow.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sprP2UpArrow" sid="988279235036585">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="659730594948004" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="C:\Users\yteng\Desktop\Arrow.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sprP2LeftArrow" sid="649112805388845">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="484595642113790" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="C:\Users\yteng\Desktop\Arrow.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sprP2RightArrow" sid="868783133743917">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="435888089024706" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="C:\Users\yteng\Desktop\Arrow.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
