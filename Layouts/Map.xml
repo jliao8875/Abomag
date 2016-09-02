@@ -373,6 +373,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="sprEgg" uid="21">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>405.319854736</x>
+                        <y>817.742126465</y>
+                        <z>0</z>
+                        <width>26.921133041</width>
+                        <height>27.85915184</height>
+                        <depth>0</depth>
+                        <hotspotX>0.494773507</hotspotX>
+                        <hotspotY>0.488215476</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

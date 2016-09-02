@@ -396,5 +396,162 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <comment>SKILLS!</comment>
+        <event-block sid="211008736324565">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="598685161516051" type="Keyboard">
+                    <param id="0" name="Key">82 (R)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="764794879662115">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="762143477001482" type="System">
+                            <param id="0" name="Variable">Player1Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_PLANKP</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="527973528849876" type="sprPlankp">
+                            <param id="0" name="Unique ID">Player1UID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="238954619322373" type="sprPlankp">
+                            <param id="0" name="Animation">&quot;OnShoot&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="548094806912728" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="552340857061105" type="sprPlankp">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="458139594533552">
+                            <conditions>
+                                <condition id="7" name="Is mirrored" sid="998177324206994" type="sprPlankp" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="344915876522389" type="sprPlankp">
+                                    <param id="0" name="Object">sprEgg</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-18" name="Rotate clockwise" sid="948505863971221" type="sprEgg">
+                                    <param id="0" name="Degrees">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="389288005487077">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="233984797771134" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="856481231281693" type="sprPlankp">
+                                    <param id="0" name="Object">sprEgg</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-18" name="Rotate clockwise" sid="810980653542294" type="sprEgg">
+                                    <param id="0" name="Degrees">180</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="853208023959661">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="654060730019314" type="Keyboard">
+                    <param id="0" name="Key">191 (/)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="597821986949528">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="512546498526275" type="System">
+                            <param id="0" name="Variable">Player2Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_PLANKP</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="476719134894883" type="sprPlankp">
+                            <param id="0" name="Unique ID">Player2UID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="674478235929110" type="sprPlankp">
+                            <param id="0" name="Animation">&quot;OnShoot&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="354187947029817" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="669250851486155" type="sprPlankp">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="771927152795649">
+                            <conditions>
+                                <condition id="7" name="Is mirrored" sid="281094868075698" type="sprPlankp" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="539909768205572" type="sprPlankp">
+                                    <param id="0" name="Object">sprEgg</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-18" name="Rotate clockwise" sid="568757563502878" type="sprEgg">
+                                    <param id="0" name="Degrees">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="351147238584951">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="980391213064045" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="466007278677271" type="sprPlankp">
+                                    <param id="0" name="Object">sprEgg</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-18" name="Rotate clockwise" sid="347273666499388" type="sprEgg">
+                                    <param id="0" name="Degrees">180</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="945889322095488">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="608413100242124" type="sprEgg">
+                    <param id="0" name="Object">Ground</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="979872317185793" type="sprEgg" />
+            </actions>
+        </event-block>
+        <event-block sid="506832339243130">
+            <conditions>
+                <condition id="-11" name="For Each" sid="375682988204737" type="System">
+                    <param id="0" name="Object">sprEgg</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="623082266122431" type="sprEgg">
+                    <param id="0" name="Distance">5</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

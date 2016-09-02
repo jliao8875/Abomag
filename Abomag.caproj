@@ -94,6 +94,21 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="0" name="OnShoot" pingpong="0" repeatcount="1" repeatto="0" sid="101156416555019" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\yteng\OneDrive\lol\plankp(shooting-eggs-animation).gif">
+                        <collision-poly>
+                            <point x="0.620112" y="0.0787879" />
+                            <point x="0.77095" y="0.0151515" />
+                            <point x="0.98743" y="0.195455" />
+                            <point x="0.949721" y="0.496591" />
+                            <point x="0.613827" y="0.991667" />
+                            <point x="0.427374" y="0.978788" />
+                            <point x="0.206704" y="0.768182" />
+                            <point x="0" y="0.530303" />
+                            <point x="0.620112" y="0.336364" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Ground" sid="251589917020859">
@@ -206,6 +221,23 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="435888089024706" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="C:\Users\yteng\Desktop\Arrow.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sprEgg" sid="696429603226310">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="235680728698378" speed="5">
+                    <frame duration="1" hotspotX="0.494774" hotspotY="0.488215" original-source="C:\Users\yteng\Desktop\egg.png">
+                        <collision-poly>
+                            <point x="0.236934" y="0.323232" />
+                            <point x="0.479094" y="0.161616" />
+                            <point x="0.74216" y="0.289562" />
+                            <point x="0.749129" y="0.656566" />
+                            <point x="0.515679" y="0.824916" />
+                            <point x="0.240418" y="0.671717" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
