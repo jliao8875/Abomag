@@ -180,6 +180,56 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="4" loop="0" name="OnStrike" pingpong="0" repeatcount="1" repeatto="0" sid="463732896796616" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501089">
+                        <collision-poly>
+                            <point x="0.20303" y="0.111111" />
+                            <point x="0.471212" y="0.0185185" />
+                            <point x="0.724242" y="0.124183" />
+                            <point x="0.869697" y="0.582789" />
+                            <point x="0.772727" y="0.551198" />
+                            <point x="0.825758" y="0.918301" />
+                            <point x="0.142424" y="0.921569" />
+                            <point x="0.157576" y="0.572985" />
+                            <point x="0.0681818" y="0.610022" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502463" hotspotY="0.5" original-source="C:\Users\yteng\OneDrive\lol\jeffliao-anime-1.gif">
+                        <collision-poly>
+                            <point x="0.241379" y="0.123288" />
+                            <point x="0.539409" y="0.0273973" />
+                            <point x="0.788177" y="0.140411" />
+                            <point x="0.906404" y="0.938356" />
+                            <point x="0.172414" y="0.955479" />
+                            <point x="0.208128" y="0.554795" />
+                            <point x="0.105911" y="0.640411" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.336538" hotspotY="0.510903" original-source="C:\Users\yteng\OneDrive\lol\jeffliao-anime-2.gif">
+                        <collision-poly>
+                            <point x="0.320513" y="0.11215" />
+                            <point x="0.519231" y="0.211838" />
+                            <point x="0.586538" y="0.957944" />
+                            <point x="0.13141" y="0.956386" />
+                            <point x="0.051282" y="0.674455" />
+                            <point x="0.163462" y="0.183801" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.274238" hotspotY="0.475884" original-source="C:\Users\yteng\OneDrive\lol\jeffliao-anime-3.gif">
+                        <collision-poly>
+                            <point x="0.0941828" y="0.176849" />
+                            <point x="0.265928" y="0.0610933" />
+                            <point x="0.43421" y="0.173633" />
+                            <point x="0.45464" y="0.393891" />
+                            <point x="0.84903" y="0.334405" />
+                            <point x="0.878809" y="0.659164" />
+                            <point x="0.694252" y="0.676849" />
+                            <point x="0.462604" y="0.62701" />
+                            <point x="0.498615" y="0.926045" />
+                            <point x="0.0914128" y="0.948553" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="sprP1UpArrow" sid="667027902346205">

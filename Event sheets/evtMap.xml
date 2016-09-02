@@ -4,6 +4,7 @@
     <name>evtMap</name>
     <events>
         <variable comment="Damage of Egg (Plankp)" constant="1" name="EGG_DMG" sid="996904335894843" static="0" type="number">1</variable>
+        <variable comment="Jeffliao&apos;s whack hurts..." constant="1" name="WHACK_DMG" sid="982139938893690" static="0" type="number">5</variable>
         <variable constant="0" name="Player1UID" sid="934364624794200" static="0" type="number">0</variable>
         <variable constant="0" name="Player2UID" sid="355194014742873" static="0" type="number">0</variable>
         <event-block sid="214585408039588">
@@ -445,7 +446,7 @@
                         <action id="-16" name="Wait" sid="548094806912728" type="System">
                             <param id="0" name="Seconds">0.2</param>
                         </action>
-                        <action id="4" name="Set animation" sid="552340857061105" type="sprPlankp">
+                        <action id="4" name="Set animation" sid="910171780922576" type="sprPlankp">
                             <param id="0" name="Animation">&quot;Default&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -490,6 +491,31 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="373623317487978">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="451854009161053" type="System">
+                            <param id="0" name="Variable">Player1Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_JLIAO</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="853008438282843" type="sprJliao">
+                            <param id="0" name="Unique ID">Player1UID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="527701070847157" type="sprJliao">
+                            <param id="0" name="Animation">&quot;OnStrike&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="584013614728844" type="System">
+                            <param id="0" name="Seconds">0.8</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="421133115076343" type="sprJliao">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>
@@ -569,6 +595,31 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="113767792078887">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="467519104334585" type="System">
+                            <param id="0" name="Variable">Player2Char</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">SPRITE_JLIAO</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="903099901760918" type="sprJliao">
+                            <param id="0" name="Unique ID">Player2UID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="483304237923262" type="sprJliao">
+                            <param id="0" name="Animation">&quot;OnStrike&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="572954243481924" type="System">
+                            <param id="0" name="Seconds">0.8</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="195686614246598" type="sprJliao">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>
@@ -720,6 +771,34 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="959437677715332">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="315359740589644" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="436213038600506">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="654563298924686" type="sprJliao">
+                            <param id="0" name="Object">sprPlankp</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="240598720062196" type="sprJliao">
+                            <param id="0" name="Animation">&quot;OnStrike&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="777197117390245" type="sprJliao">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="931039489237329" type="sprPlankp">
+                            <param id="0" name="Instance variable">HitPoint</param>
+                            <param id="1" name="Value">WHACK_DMG</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>
